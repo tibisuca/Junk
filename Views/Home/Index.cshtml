@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <div class="col-sm-6 offset-5">
+        <form method="post" asp-controller="Cars" asp-action="SearchResult">
+            <label class="row">Who blocked you?</label>
+            <input class="row" name="searchTerm" type="text" placeholder="License Plate" /><br />
+            <input class="row offset-1" type="submit" value="Search" />
+        </form>
+    </div>
+</div>
